@@ -19,10 +19,6 @@ a {
 }
 
 img {
-    width: 35rem;
-    height: 20rem;
-    object-fit: cover;
-    object-position: 0 100%;
     border-radius: 15px;
 }
 
@@ -43,6 +39,7 @@ img {
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
+    border-bottom: 3px solid #E5E7EB;
 }
 
 .navbar ul {
@@ -56,8 +53,7 @@ img {
 
 /* Hero */
 
-#hero,
-#footer {
+#hero {
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
@@ -91,11 +87,19 @@ img {
     width: 25rem;
 }
 
+.heroImg {
+    width: 35rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
 /* Information */
 
-#information,
-#call {
-    background-color: white;
+#information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #information h1 {
@@ -106,17 +110,30 @@ img {
 
 .infoBlock {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60rem;
 }
 
 .card {
-    flex: 1;
-    border: 3px solid #3882F6;
-    border-radius: 15px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 12rem;
 }
 
-.card>img {
-    width: 200px;
-    height: 200px;
+.cardImg {
+    height: 10rem;
+    /* border: 4px solid #3882F6; */
+    box-shadow: 0 0 0 4px rgb(47, 68, 98) inset;
+    padding: 4px;
+    background-color: rgb(47, 68, 98);
+}
+
+.cardText {
+    margin: 0.5rem;
 }
 
 /* Quote */
@@ -131,4 +148,13 @@ img {
 .signUp,
 .callBox {
     background-color: #3882F6;
+}
+
+/* Footer */
+#footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
 }
