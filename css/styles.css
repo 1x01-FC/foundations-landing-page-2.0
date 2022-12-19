@@ -249,5 +249,6 @@ h3 {
     color: #E5E7EB;
     font-size: 18px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
 }
